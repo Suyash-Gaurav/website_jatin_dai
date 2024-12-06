@@ -3,50 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Maintenance</title>
-    <style>
-        /* Basic Styling for Under Maintenance Page */
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .maintenance-container {
-            text-align: center;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .maintenance-container h1 {
-            margin-top: 0;
-            color: #333;
-        }
-        .maintenance-container p {
-            margin-bottom: 30px;
-            color: #666;
-        }
-        .maintenance-container a {
-            text-decoration: none;
-            color: #007bff;
-        }
-        .maintenance-container a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>ESHER OILs - Premium Oil Trading Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div class="maintenance-container">
-    <h1>Website Under Maintenance</h1>
-    <p>We're currently performing scheduled maintenance. Our website will be back online shortly. Thank you for your patience.</p>
-    <p>In the meantime, you can reach us at <a href="mailto:sales@esheroils.fi">sales@esheroils.fi</a> for urgent inquiries.</p>
+    <div class="cursor"></div>
     
-</div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">ESHER OILs</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/products.html">Products</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Premium Oil Trading</h1>
+                <p>International presence in Ukraine, Poland, and Portugal</p>
+                <a href="pages/products.html" class="cta-button">Explore Products</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Our Premium Oils</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="assets/images/soybean-oil.jpg" alt="Soybean Oil">
+                    <h3>Soybean Oil</h3>
+                    <a href="pages/soybean-oil.html">Learn More</a>
+                </div>
+                <!-- Add other product cards -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ESHER OILs</h4>
+                <p>Premium oil trading company based in Finland</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: sales@esheroils.fi</p>
+            </div>
+            <div class="footer-section">
+                <h4>Locations</h4>
+                <p>Finland | Ukraine | Poland | Portugal</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
